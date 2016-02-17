@@ -1,7 +1,30 @@
-Initializers for auto-properties  --- Geen idee of dit impact heeft op supportcenter
+## Initializers for auto-properties  --- Geen idee of dit impact heeft op supportcenter
 
-public class Customer
-{
-    public string First { get; set; } = "Jane";
-    public string Last { get; set; } = "Doe";
-}
+> public class Customer
+> {
+>    public string First { get; set; } = "Jane";
+>    public string Last { get; set; } = "Doe";
+> }
+
+## Getter-only auto-properties --- Hetzelfde als het vorige maar de set kan weg gelaten worden
+
+> public class Customer
+> {
+>    public string First { get; } = "Jane";
+>    public string Last { get; } = "Doe";
+> }
+
+### Kan ook direct in het volgende field declared worden
+> public class Customer
+> {
+>    public string Name { get; }
+>    public Customer(string first, string last)
+>    {
+>        Name = first + " " + last;
+>    }
+> }
+
+## Methods as well as user-defined operators and conversions can be given an expression body by use of the “lambda arrow”
+> public Point Move(int dx, int dy) => new Point(x + dx, y + dy); 
+> public static Complex operator +(Complex a, Complex b) => a.Add(b);
+> public static implicit operator string(Person p) => p.First + " " + p.Last;
