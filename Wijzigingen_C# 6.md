@@ -1,16 +1,16 @@
-##Shortlist
+## Shortlist
 
-*Compiler-as-a-service (Roslyn)
-*Import of static type members into namespace
-*Exception filters
-*Await in catch/finally blocks
-*Auto property initializers
-*Default values for getter-only properties
-*Expression-bodied members
-*Null propagator (Succinct null checking)
-*String Interpolation
-*nameof operator
-*Dictionary initializer
+* Compiler-as-a-service (Roslyn)
+* Import of static type members into namespace
+* Exception filters
+* Await in catch/finally blocks
+* Auto property initializers
+* Default values for getter-only properties
+* Expression-bodied members
+* Null propagator (Succinct null checking)
+* String Interpolation
+* nameof operator
+* Dictionary initializer
 
 
 
