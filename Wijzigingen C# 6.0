@@ -1,0 +1,7 @@
+Initializers for auto-properties  --- Geen idee of dit impact heeft op supportcenter
+
+public class Customer
+{
+    public string First { get; set; } = "Jane";
+    public string Last { get; set; } = "Doe";
+}
