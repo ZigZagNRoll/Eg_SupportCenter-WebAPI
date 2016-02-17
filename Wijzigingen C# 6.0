@@ -1,10 +1,12 @@
 ## Initializers for auto-properties  --- Geen idee of dit impact heeft op supportcenter
 
-> public class Customer
-> {
->    public string First { get; set; } = "Jane";
->    public string Last { get; set; } = "Doe";
-> }
+```C#
+ public class Customer
+{
+    public string First { get; set; } = "Jane";
+    public string Last { get; set; } = "Doe";
+}
+```
 
 ## Getter-only auto-properties --- Hetzelfde als het vorige maar de set kan weg gelaten worden
 
